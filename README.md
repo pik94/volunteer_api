@@ -23,7 +23,7 @@ It's a simple API for searching a volunteer in a town Visotsk.
     | DB_TYPE | no | sqlite | Database type. Now SQLite and PostgreSQL are supported. |
     | DB_HOST | no | localhost | A database host. |
     | DB_PORT | no | 5432 | A database port. |
-    | DB_USER | yes (no no SQLite) | user | A database user. Required to be set if it's used no SQLite database. |
+    | DB_USER | yes (no for SQLite) | user | A database user. Required to be set if it's used no SQLite database. |
     | DB_PASSWORD | yes (no for SQLite) | password | A database user. Required to be set if it's used no SQLite database. |
     | DB_NAME | no (yes for SQLite) | tutordb | A database name. If you use SQLite use an absolute or relative path to the database. |
     | SERVER_NAME | no | localhost | An address where the server will be deployed. |
