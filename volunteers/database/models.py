@@ -25,6 +25,20 @@ class District(db.Model):
                               secondary=districts_streets)
 
 
+class Request(db.Model):
+    __tablename__ = 'requests'
+
+    id = db.Column(db.Integer, primary_key=True)
+    district_id = db.Column(db.Integer, db.ForeignKey('districts.id'))
+    street_id = db.Column(db.Integer, db.ForeignKey('streets.id'))
+    volunteer_id = db.Column(db.Integer, db.ForeignKey('volunteers.id'))
+    address = db.Column(db.String, nullable=False)
+    name = db.Column(db.String, nullable=False)
+    surname = db.Column(db.String, nullable=False)
+    phone = db.Column(db.String, nullable=False)
+    text = db.Column(db.String, nullable=False)
+
+
 class Street(db.Model):
     __tablename__ = 'streets'
 
