@@ -36,7 +36,7 @@ It's a simple API for searching a volunteer in a town Visotsk.
    
 3. Fill tables
     ```shell script
-    python init_data.py -i /path/to/a/directory/with/csv
+    python init_data.py -i /path/to/a/json/file
     ```
 
 4.  For running on a production server:
